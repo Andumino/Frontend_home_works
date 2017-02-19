@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Домашнее задание от 19.01.2017г. </title>
+    <link href="01.css" rel="stylesheet"/>
+</head>
+<body>
+<form method="POST">
+    <table >
+        <tr>
+            <td align="center" colspan="5"> Домашние финансы - добавление чека</td>
+        </tr>
+        <tr>
+            <td align="center" colspan="2"> Заголовок </td>
+            <td align="center" colspan="3"> Спецификация </td>
+        </tr>
+        <tr>
+            <td> Дата чека/документа: </td>
+            <td> <input type="date" name="doc_date" />  </td>
+            <td rowspan="4"> Что купили: </td>
+            <td> Продукты: </td>
+            <td> <input type="number" name="food" /> </td>
+        </tr>
+        <tr>
+            <td> Номер чека/документа: </td>
+            <td> <input type="text" name="doc_numb" /> </td>
+            <td> Напитки: </td>
+            <td> <input type="number" name="drink" /> </td>
+        </tr>
+        <tr>
+            <td> Способ рассчета: </td>
+            <td>
+                <select name='pay_type'>
+                    <option>наличными</option>
+                    <option>кредитка 1</option>
+                    <option selected>кредитка 2</option>
+                </select>
+            <td> Бытовая химия: </td>
+            <td> <input type="number" name="chemicals" /> </td>
+            </td>
+        </tr>
+        <tr>
+            <td> Место покупки: </td>
+            <td>
+                <select name='pay_place'>
+                    <option>Сильпо</option>
+                    <option>АТБ</option>
+                    <option selected>базар</option>
+                    <option>Ашан</option>
+                    <option>Метро</option>
+                </select>
+            <td> Другое: </td>
+            <td> <input type="number" name="other" /> </td>
+        </tr>
+        <tr>
+            <td align="center" colspan="5">
+                <input type="submit" value="Сохранить">
+            </td>
+        </tr>
+    </table>
+
+</form>
+
+</body>
+</html>
