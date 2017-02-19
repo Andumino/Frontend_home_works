@@ -1,0 +1,60 @@
+.texts p:nth-child(1){
+    font-weight: bold;
+}
+.texts p:nth-child(1) b {
+    font-weight: normal;
+}
+
+.texts p:nth-child(2){
+    font-style: italic;
+}
+.texts p:nth-child(2) i {
+    font-style: normal;
+}
+
+.smile {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border-radius: 50px;
+}
+
+.mouth, .eye {
+    background: black;
+    position: relative;
+}
+
+.eye {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.eye-left {
+    top: 30px;
+    left: 30px;
+}
+.eye-right {
+    top: 20px;
+    left: 60px;
+}
+
+.mouth {
+    width: 35px;
+    height: 10px;
+    top: 40px;
+    left: 32px;
+}
+
+ul {
+    list-style-type :none;
+}
+li:before {
+    content: " ";
+    display : block;
+    position: absolute;
+    margin-top: 6px;
+    left: 35px;
+    border: 3px solid transparent;
+    border-left: 5px solid black;
+}
