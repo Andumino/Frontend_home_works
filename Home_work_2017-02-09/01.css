@@ -1,0 +1,59 @@
+.main-container {
+    display: flex;
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+    background: lightgray;
+    font-size: 2em;
+}
+
+.header, .footer {
+    flex: 1 100%;
+    background: grey;
+    line-height: 100px;
+}
+
+.body-container {
+    display: flex;
+    flex: 1 100%;
+    flex-flow: row wrap;
+    background: blue;
+    padding: 5px;
+}
+
+.body-container > * {
+    flex: 1 100%;
+    line-height: 100px;
+}
+
+.item1 {background: pink;}
+.item2 {background: violet;}
+.item3 {background: red;}
+.item4 {background: darkviolet;}
+.item5 {background: lightblue;}
+
+@media all and (min-width: 480px) {
+    .header, .item, .footer { flex: 1 100%; }
+}
+
+@media all and (min-width: 768px) {
+    .header { flex: 1 100%; }
+    .footer { flex: 1 100%; }
+    .item1  { flex: 1 50%; order: 1}
+    .item2  { flex: 1 50%; order: 2}
+    .item3  { flex: 1 50%; order: 3}
+    .item5  { flex: 1 50%; order: 4}
+    .item4  { flex: 2 100%; order: 5}
+}
+
+@media all and (min-width: 1024px) {
+    .header { flex: 1 100%; }
+    .footer { flex: 1 100%; }
+    .item1  { flex: 1 33%; order: 1}
+    .item2  { flex: 1 33%; order: 2}
+    .item3  { flex: 1 33%; order: 3}
+    .item4  { flex: 1 50%; order: 4}
+    .item5  { flex: 2 50%; order: 5}
+}
+
+
