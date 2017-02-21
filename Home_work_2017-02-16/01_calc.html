@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+</head>
+<body>
+
+<input name="n1" id="n1" type="number" required>
+<select name='operation' id="oper">
+    <option>+</option>
+    <option>-</option>
+    <option>*</option>
+    <option>/</option>
+    <option>^</option>
+</select>
+<input name="n2" id="n2" type="number" required>
+<button onclick="OnClick()">Рассчитать</button>
+
+<p id="result"> </p>
+
+
+<script>
+
+    function Calc(num1, num2, oper) {
+        var result = 0;
+        switch(oper) {
+            case "+":
+                result = num1 + num2;
+                break;
+            case "-":
+                result = num1 - num2;
+                break;
+            case "*":
+                result = num1 * num2;
+                break;
+            case "/":
+                result = num1 / num2;
+                break;
+            case "^":
+                result = Math.pow(num1, num2);
+                break;
+            default:
+                result = "no result";
+        }
+        return result;
+    }
+
+    function OnClick() {
+        var num1 = +document.getElementById("n1").value;
+        var num2 = +document.getElementById("n2").value;
+        var oper = document.getElementById("oper").value;
+        var result = Calc(num1, num2, oper);
+        document.getElementById("result").innerHTML = "Результат: "+num1+oper+num2+'='+result;
+    }
+
+</script>
+</body>
+</html>

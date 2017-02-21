@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<table style="width: 600px;">
+    <caption> Список сотрудников </caption>
+    <thead style="background: #fc0">
+    <tr>
+        <td align='center'> Имя </td>
+        <td align='center'> Фамилия </td>
+        <td align='center'> Возраст </td>
+    </tr>
+    </thead>
+    <tbody style="background: #ccc">
+
+    <script type="text/javascript">
+
+        var persons = [];
+
+        var person = {
+            name: '',
+            sname: '',
+            age: ''
+        };
+
+        function ask() {
+            person.name = prompt("Введите свое имя:");
+            if (!person.name) return;
+            person.sname = prompt("Введите свою фамилию:");
+            person.age = prompt("Введите свой возраст:");
+            persons.push(person);
+        }
+
+        function say() {
+            document.write('<tr>');
+            document.write("<td align='left'>" + person.name + "</td>");
+            document.write("<td align='left'>" + person.sname + "</td>");
+            document.write("<td align='center'>" + person.age + "</td>");
+            document.write('</tr>');
+        }
+
+        while (true) {
+            ask();
+            if (!person.name) break;
+            say();
+        }
+
+    </script>
+
+    </tbody>
+</table>
+</body>
+</html>
