@@ -47,8 +47,8 @@
     }
 
     function OnClick() {
-        var num1 = +document.getElementById("n1").value;
-        var num2 = +document.getElementById("n2").value;
+        var num1 = document.getElementById("n1").value;
+        var num2 = document.getElementById("n2").value;
         var oper = document.getElementById("oper").value;
         var result = Calc(num1, num2, oper);
         document.getElementById("result").innerHTML = "Результат: "+num1+oper+num2+'='+result;
