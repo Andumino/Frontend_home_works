@@ -1,0 +1,15 @@
+{
+  "name": "hw20170330",
+  "version": "1.0.0",
+  "description": "unit test function",
+  "main": "createList.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "andriy luhina",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}
